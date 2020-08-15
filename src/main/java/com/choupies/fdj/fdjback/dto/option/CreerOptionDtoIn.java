@@ -4,8 +4,6 @@ import com.choupies.fdj.fdjback.model.enums.TypeLoterie;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.ElementCollection;
 import java.util.List;
 
 @Getter

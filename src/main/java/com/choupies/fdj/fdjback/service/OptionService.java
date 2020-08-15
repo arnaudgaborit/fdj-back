@@ -2,7 +2,6 @@ package com.choupies.fdj.fdjback.service;
 
 import com.choupies.fdj.fdjback.dto.option.CreerOptionDtoIn;
 import com.choupies.fdj.fdjback.dto.option.CreerOptionDtoOut;
-import com.choupies.fdj.fdjback.dto.ticketloterie.TicketLotoCreerDtoOut;
 import com.choupies.fdj.fdjback.model.Option;
 import com.choupies.fdj.fdjback.repository.OptionRepository;
 import com.choupies.fdj.fdjback.service.mapper.impl.OptionMapper;
@@ -24,8 +23,7 @@ public class OptionService {
     }
 
     public CreerOptionDtoOut creerOption(CreerOptionDtoIn creerOptionDtoIn) {
-        LOGGER.debug(String.format("CreerOption avec option=%s", creerOptionDtoIn.toString()));
-
+        LOGGER.debug("CreerOption");
         Option option = optionMapper.convert(creerOptionDtoIn);
         option = optionRepository.save(option);
 
